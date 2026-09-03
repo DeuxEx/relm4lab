@@ -1,0 +1,8 @@
+[package]
+name = "relm4-test"
+version = "0.0.1"
+edition = "2024"
+
+[dependencies]
+# Vi låter relm4 hantera gtk4-beroendet automatiskt
+relm4 = "0.9"

@@ -1,0 +1,322 @@
+   0.149225550s  INFO prepare_target{force=false package_id=relm4-test v0.0.1 (/home/void/relm4lab) target="relm4-test"}: cargo::core::compiler::fingerprint: dependency on `build_script_build` is newer than we are 1788446216.889749946s > 1788442252.428139185s "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.189"
+   0.150183533s  INFO prepare_target{force=false package_id=relm4-test v0.0.1 (/home/void/relm4lab) target="relm4-test"}: cargo::core::compiler::fingerprint: dependency on `futures_macro` is newer than we are 1788446221.023761864s > 1788442677.365564623s "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-util-0.3.34"
+   0.151111757s  INFO prepare_target{force=false package_id=relm4-test v0.0.1 (/home/void/relm4lab) target="relm4-test"}: cargo::core::compiler::fingerprint: stale: missing "/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cairo-sys-rs-0.20.10/Cargo.toml"
+   0.151242920s  INFO prepare_target{force=false package_id=relm4-test v0.0.1 (/home/void/relm4lab) target="relm4-test"}: cargo::core::compiler::fingerprint: stale: missing "/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/glib-sys-0.20.10/Cargo.toml"
+   0.151545685s  INFO prepare_target{force=false package_id=relm4-test v0.0.1 (/home/void/relm4lab) target="relm4-test"}: cargo::core::compiler::fingerprint: stale: missing "/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gio-sys-0.20.10/Cargo.toml"
+   0.151656793s  INFO prepare_target{force=false package_id=relm4-test v0.0.1 (/home/void/relm4lab) target="relm4-test"}: cargo::core::compiler::fingerprint: stale: missing "/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gobject-sys-0.20.10/Cargo.toml"
+   0.152056971s  INFO prepare_target{force=false package_id=relm4-test v0.0.1 (/home/void/relm4lab) target="relm4-test"}: cargo::core::compiler::fingerprint: dependency on `unicode_ident` is newer than we are 1788446216.667371388s > 1788445936.768627587s "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.119"
+   0.152084152s  INFO prepare_target{force=false package_id=relm4-test v0.0.1 (/home/void/relm4lab) target="relm4-test"}: cargo::core::compiler::fingerprint: dependency on `quote` is newer than we are 1788446217.618752047s > 1788446071.606289730s "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/glib-macros-0.20.12"
+   0.152538958s  INFO prepare_target{force=false package_id=relm4-test v0.0.1 (/home/void/relm4lab) target="relm4-test"}: cargo::core::compiler::fingerprint: dependency on `build_script_build` is newer than we are 1788443522.286173613s > 1788442677.379564649s "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memoffset-0.9.1"
+   0.152589278s  INFO prepare_target{force=false package_id=relm4-test v0.0.1 (/home/void/relm4lab) target="relm4-test"}: cargo::core::compiler::fingerprint: dependency on `build_script_build` is newer than we are 1788443522.074173204s > 1788442677.453564791s "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/field-offset-0.3.6"
+   0.152693804s  INFO prepare_target{force=false package_id=relm4-test v0.0.1 (/home/void/relm4lab) target="relm4-test"}: cargo::core::compiler::fingerprint: stale: missing "/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gdk-pixbuf-sys-0.20.10/Cargo.toml"
+   0.152974037s  INFO prepare_target{force=false package_id=relm4-test v0.0.1 (/home/void/relm4lab) target="relm4-test"}: cargo::core::compiler::fingerprint: stale: missing "/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gdk4-sys-0.9.6/Cargo.toml"
+   0.153111561s  INFO prepare_target{force=false package_id=relm4-test v0.0.1 (/home/void/relm4lab) target="relm4-test"}: cargo::core::compiler::fingerprint: stale: missing "/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pango-sys-0.20.10/Cargo.toml"
+   0.153340890s  INFO prepare_target{force=false package_id=relm4-test v0.0.1 (/home/void/relm4lab) target="relm4-test"}: cargo::core::compiler::fingerprint: stale: missing "/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/graphene-sys-0.20.10/Cargo.toml"
+   0.153529654s  INFO prepare_target{force=false package_id=relm4-test v0.0.1 (/home/void/relm4lab) target="relm4-test"}: cargo::core::compiler::fingerprint: stale: missing "/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gsk4-sys-0.9.6/Cargo.toml"
+   0.153634387s  INFO prepare_target{force=false package_id=relm4-test v0.0.1 (/home/void/relm4lab) target="relm4-test"}: cargo::core::compiler::fingerprint: dependency on `quote` is newer than we are 1788446217.618752047s > 1788446069.178277806s "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gtk4-macros-0.9.5"
+   0.153728265s  INFO prepare_target{force=false package_id=relm4-test v0.0.1 (/home/void/relm4lab) target="relm4-test"}: cargo::core::compiler::fingerprint: stale: missing "/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gtk4-sys-0.9.6/Cargo.toml"
+   0.154020999s  INFO prepare_target{force=false package_id=relm4-test v0.0.1 (/home/void/relm4lab) target="relm4-test"}: cargo::core::compiler::fingerprint: dependency on `quote` is newer than we are 1788446217.618752047s > 1788446070.332283473s "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/relm4-macros-0.9.1"
+   0.154126704s  INFO prepare_target{force=false package_id=relm4-test v0.0.1 (/home/void/relm4lab) target="relm4-test"}: cargo::core::compiler::fingerprint: dependency on `quote` is newer than we are 1788446217.618752047s > 1788445938.750637321s "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tracing-attributes-0.1.31"
+   0.154268861s  INFO prepare_target{force=false package_id=relm4-test v0.0.1 (/home/void/relm4lab) target="relm4-test"}: cargo::core::compiler::fingerprint: fingerprint error for relm4-test v0.0.1 (/home/void/relm4lab)/Check { test: false }/TargetInner { name: "relm4-test", doc: true, ..: with_path("/home/void/relm4lab/src/main.rs", Edition2024) }
+   0.154279666s  INFO prepare_target{force=false package_id=relm4-test v0.0.1 (/home/void/relm4lab) target="relm4-test"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/void/relm4lab/target/debug/.fingerprint/relm4-test-a7f49fa500b127e2/bin-relm4-test`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  16: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  17: <unknown>
+   0.177635960s  INFO prepare_target{force=false package_id=relm4 v0.9.1 target="relm4"}: cargo::core::compiler::fingerprint: fingerprint error for relm4 v0.9.1/Check { test: false }/TargetInner { ..: lib_target("relm4", ["lib"], "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/relm4-0.9.1/src/lib.rs", Edition2021) }
+   0.177651474s  INFO prepare_target{force=false package_id=relm4 v0.9.1 target="relm4"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/void/relm4lab/target/debug/.fingerprint/relm4-2a6717e31f0897a7/lib-relm4`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  17: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  18: <unknown>
+   0.177972235s  INFO prepare_target{force=false package_id=flume v0.11.1 target="flume"}: cargo::core::compiler::fingerprint: fingerprint error for flume v0.11.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("flume", ["lib"], "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/flume-0.11.1/src/lib.rs", Edition2018) }
+   0.177979969s  INFO prepare_target{force=false package_id=flume v0.11.1 target="flume"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/void/relm4lab/target/debug/.fingerprint/flume-a86ae75a6fdbbc91/lib-flume`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  18: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  19: <unknown>
+   0.178323007s  INFO prepare_target{force=false package_id=nanorand v0.7.0 target="nanorand"}: cargo::core::compiler::fingerprint: fingerprint error for nanorand v0.7.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("nanorand", ["lib"], "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nanorand-0.7.0/src/lib.rs", Edition2021) }
+   0.178331036s  INFO prepare_target{force=false package_id=nanorand v0.7.0 target="nanorand"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/void/relm4lab/target/debug/.fingerprint/nanorand-113cef5fe87409ce/lib-nanorand`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  19: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  20: <unknown>
+   0.178441820s  INFO prepare_target{force=false package_id=getrandom v0.2.17 target="getrandom"}: cargo::core::compiler::fingerprint: fingerprint error for getrandom v0.2.17/Check { test: false }/TargetInner { ..: lib_target("getrandom", ["lib"], "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.17/src/lib.rs", Edition2018) }
+   0.178448508s  INFO prepare_target{force=false package_id=getrandom v0.2.17 target="getrandom"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/void/relm4lab/target/debug/.fingerprint/getrandom-aa26647f49c2f359/lib-getrandom`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  20: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  21: <unknown>
+   0.178585430s  INFO prepare_target{force=false package_id=cfg-if v1.0.4 target="cfg_if"}: cargo::core::compiler::fingerprint: fingerprint error for cfg-if v1.0.4/Check { test: false }/TargetInner { ..: lib_target("cfg_if", ["lib"], "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cfg-if-1.0.4/src/lib.rs", Edition2018) }
+   0.178592363s  INFO prepare_target{force=false package_id=cfg-if v1.0.4 target="cfg_if"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/void/relm4lab/target/debug/.fingerprint/cfg-if-268df95b4164e82c/lib-cfg_if`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  21: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  22: <unknown>
+   0.178756118s  INFO prepare_target{force=false package_id=libc v0.2.189 target="libc"}: cargo::core::compiler::fingerprint: fingerprint dirty for libc v0.2.189/Check { test: false }/TargetInner { ..: lib_target("libc", ["lib"], "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.189/src/lib.rs", Edition2021) }
+   0.178765157s  INFO prepare_target{force=false package_id=libc v0.2.189 target="libc"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDependency { unit: UnitIndex(64), dep_mtime: FileTime { seconds: 1788446216, nanos: 889749946 }, max_mtime: FileTime { seconds: 1788442252, nanos: 428139185 } })
+   0.179087855s  INFO prepare_target{force=false package_id=libc v0.2.189 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for libc v0.2.189/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.189/build.rs", Edition2021) }
+   0.179096069s  INFO prepare_target{force=false package_id=libc v0.2.189 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(63) }
+   0.179268316s  INFO prepare_target{force=false package_id=libc v0.2.189 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for libc v0.2.189/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.189/build.rs", Edition2021) }
+   0.179281699s  INFO prepare_target{force=false package_id=libc v0.2.189 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: PathToSourceChanged
+   0.179836443s  INFO prepare_target{force=false package_id=futures v0.3.34 target="futures"}: cargo::core::compiler::fingerprint: fingerprint dirty for futures v0.3.34/Check { test: false }/TargetInner { ..: lib_target("futures", ["lib"], "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-0.3.34/src/lib.rs", Edition2018) }
+   0.179845762s  INFO prepare_target{force=false package_id=futures v0.3.34 target="futures"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDepFingerprint { unit: UnitIndex(17) })
+   0.180171724s  INFO prepare_target{force=false package_id=futures-executor v0.3.34 target="futures_executor"}: cargo::core::compiler::fingerprint: fingerprint dirty for futures-executor v0.3.34/Check { test: false }/TargetInner { ..: lib_target("futures_executor", ["lib"], "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-executor-0.3.34/src/lib.rs", Edition2018) }
+   0.180185629s  INFO prepare_target{force=false package_id=futures-executor v0.3.34 target="futures_executor"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDepFingerprint { unit: UnitIndex(22) })
+   0.180491023s  INFO prepare_target{force=false package_id=futures-util v0.3.34 target="futures_util"}: cargo::core::compiler::fingerprint: fingerprint dirty for futures-util v0.3.34/Check { test: false }/TargetInner { ..: lib_target("futures_util", ["lib"], "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-util-0.3.34/src/lib.rs", Edition2018) }
+   0.180505220s  INFO prepare_target{force=false package_id=futures-util v0.3.34 target="futures_util"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDependency { unit: UnitIndex(19), dep_mtime: FileTime { seconds: 1788446221, nanos: 23761864 }, max_mtime: FileTime { seconds: 1788442677, nanos: 365564623 } })
+   0.180893752s  INFO prepare_target{force=false package_id=futures-macro v0.3.34 target="futures_macro"}: cargo::core::compiler::fingerprint: fingerprint dirty for futures-macro v0.3.34/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("futures_macro", ["proc-macro"], "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.34/src/lib.rs", Edition2018) }
+   0.180908172s  INFO prepare_target{force=false package_id=futures-macro v0.3.34 target="futures_macro"}: cargo::core::compiler::fingerprint:     dirty: PathToSourceChanged
+   0.181164270s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.107 target="proc_macro2"}: cargo::core::compiler::fingerprint: fingerprint dirty for proc-macro2 v1.0.107/Build/TargetInner { ..: lib_target("proc_macro2", ["lib"], "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.107/src/lib.rs", Edition2021) }
+   0.181172913s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.107 target="proc_macro2"}: cargo::core::compiler::fingerprint:     dirty: PathToSourceChanged
+   0.181555520s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.107 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for proc-macro2 v1.0.107/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.107/build.rs", Edition2021) }
+   0.181568584s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.107 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(81) }
+   0.181675080s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.107 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for proc-macro2 v1.0.107/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.107/build.rs", Edition2021) }
+   0.181687699s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.107 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: PathToSourceChanged
+   0.181913900s  INFO prepare_target{force=false package_id=unicode-ident v1.0.24 target="unicode_ident"}: cargo::core::compiler::fingerprint: fingerprint dirty for unicode-ident v1.0.24/Build/TargetInner { ..: lib_target("unicode_ident", ["lib"], "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unicode-ident-1.0.24/src/lib.rs", Edition2021) }
+   0.181927094s  INFO prepare_target{force=false package_id=unicode-ident v1.0.24 target="unicode_ident"}: cargo::core::compiler::fingerprint:     dirty: PathToSourceChanged
+   0.182162495s  INFO prepare_target{force=false package_id=quote v1.0.47 target="quote"}: cargo::core::compiler::fingerprint: fingerprint dirty for quote v1.0.47/Build/TargetInner { ..: lib_target("quote", ["lib"], "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quote-1.0.47/src/lib.rs", Edition2021) }
+   0.182174677s  INFO prepare_target{force=false package_id=quote v1.0.47 target="quote"}: cargo::core::compiler::fingerprint:     dirty: PathToSourceChanged
+   0.182535552s  INFO prepare_target{force=false package_id=quote v1.0.47 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for quote v1.0.47/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quote-1.0.47/build.rs", Edition2021) }
+   0.182548615s  INFO prepare_target{force=false package_id=quote v1.0.47 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: UnitDependencyInfoChanged { unit: UnitIndex(84) }
+   0.182666641s  INFO prepare_target{force=false package_id=quote v1.0.47 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for quote v1.0.47/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quote-1.0.47/build.rs", Edition2021) }
+   0.182679417s  INFO prepare_target{force=false package_id=quote v1.0.47 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: PathToSourceChanged
+   0.182926345s  INFO prepare_target{force=false package_id=syn v3.0.4 target="syn"}: cargo::core::compiler::fingerprint: fingerprint dirty for syn v3.0.4/Build/TargetInner { ..: lib_target("syn", ["lib"], "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.4/src/lib.rs", Edition2021) }
+   0.182938935s  INFO prepare_target{force=false package_id=syn v3.0.4 target="syn"}: cargo::core::compiler::fingerprint:     dirty: PathToSourceChanged
+   0.183399007s  INFO prepare_target{force=false package_id=gtk4 v0.9.7 target="gtk4"}: cargo::core::compiler::fingerprint: fingerprint error for gtk4 v0.9.7/Check { test: false }/TargetInner { ..: lib_target("gtk4", ["lib"], "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gtk4-0.9.7/src/lib.rs", Edition2021) }
+   0.183407339s  INFO prepare_target{force=false package_id=gtk4 v0.9.7 target="gtk4"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/void/relm4lab/target/debug/.fingerprint/gtk4-231bce68c7a1388d/lib-gtk4`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  18: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  19: <unknown>
+   0.183698250s  INFO prepare_target{force=false package_id=cairo-rs v0.20.12 target="cairo"}: cargo::core::compiler::fingerprint: fingerprint error for cairo-rs v0.20.12/Check { test: false }/TargetInner { ..: lib_target("cairo", ["lib"], "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cairo-rs-0.20.12/src/lib.rs", Edition2021) }
+   0.183705976s  INFO prepare_target{force=false package_id=cairo-rs v0.20.12 target="cairo"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/void/relm4lab/target/debug/.fingerprint/cairo-rs-6466d9e8ff55026f/lib-cairo`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  19: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  20: <unknown>
+   0.183995391s  INFO prepare_target{force=false package_id=cairo-sys-rs v0.20.10 target="cairo_sys"}: cargo::core::compiler::fingerprint: fingerprint error for cairo-sys-rs v0.20.10/Check { test: false }/TargetInner { ..: lib_target("cairo_sys", ["lib"], "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cairo-sys-rs-0.20.10/src/lib.rs", Edition2021) }
+   0.184003430s  INFO prepare_target{force=false package_id=cairo-sys-rs v0.20.10 target="cairo_sys"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/void/relm4lab/target/debug/.fingerprint/cairo-sys-rs-6c8caef7ec741cfa/lib-cairo_sys`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  20: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  21: <unknown>
+   0.184376411s  INFO prepare_target{force=false package_id=cairo-sys-rs v0.20.10 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for cairo-sys-rs v0.20.10/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/void/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cairo-sys-rs-0.20.10/build.rs", Edition2021) }
+   0.184384993s  INFO prepare_target{force=false package_id=cairo-sys-rs v0.20.10 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: RerunIfChangedOutputPathsChanged { old: ["Cargo.toml"], new: ["/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cairo-sys-rs-0.20.10/Cargo.toml"] }
+error: failed to write `/home/void/relm4lab/target/debug/.fingerprint/cairo-sys-rs-b375c9fee1def0b9/run-build-script-build-script-build`
+
+Caused by:
+  Permission denied (os error 13)
