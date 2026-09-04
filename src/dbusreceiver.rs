@@ -1,8 +1,13 @@
+#[warn(dead_code)]
+#[warn(unused)]
+#[warn(unused_imports)]
+
+
 use zbus::{interface, connection};
 use std::error::Error;
 
 // 1. Define the structure that will hold your application state
-struct DataReceiver;
+pub struct DataReceiver;
 
 // 2. Export this structure as a D-Bus Interface
 #[interface(name = "com.example.DataReceiver")]
@@ -15,7 +20,7 @@ impl DataReceiver {
 }
 
 #[tokio::main]
-async fn main() -> Result<(), Box<dyn Error>> {
+pub async fn main() -> Result<(), Box<dyn Error>> {
     let receiver = DataReceiver;
 
     // 3. Connect to the user's Session Bus and claim a unique name
@@ -28,7 +33,8 @@ async fn main() -> Result<(), Box<dyn Error>> {
     println!("D-Bus service 'com.example.AppA' is running...");
     
     // Keep the service alive indefinitely
-    loop {
+    loop
+    {
         tokio::time::sleep(std::time::Duration::from_secs(60)).await;
     }
 }

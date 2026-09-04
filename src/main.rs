@@ -1,6 +1,13 @@
+
 use relm4::prelude::*;
+
 // RÄTT IMPORT: Relm4 återexporterar gtk4 som 'gtk'
 use relm4::gtk::prelude::*;
+
+
+mod dbusreceiver;
+use dbusreceiver::{main as other_main};
+
 
 // 1. Skapa en struktur för applikationens tillstånd (State)
 struct App;
@@ -47,4 +54,5 @@ impl SimpleComponent for App {
 fn main() {
     let app = RelmApp::new("se.exempel.enkelt_fonster");
     app.run::<App>(());
+    let _ = dbusreceiver::main();
 }
