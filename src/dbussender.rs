@@ -1,3 +1,8 @@
+#![allow(dead_code)]
+#![allow(unused_variables)]
+#![allow(unused_imports)]
+
+
 use zbus::{proxy, Connection};
 use std::time::Duration;
 use tokio::time::sleep;

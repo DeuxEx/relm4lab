@@ -1,106 +1,92 @@
+#![allow(dead_code)]
+#![allow(unused_variables)]
+#![allow(unused_imports)]
+
 
 use relm4::prelude::*;
-
-// RÄTT IMPORT: Relm4 återexporterar gtk4 som 'gtk'
 use relm4::gtk::prelude::*;
+// LÄGG TILL DESSA TVÅ RADER:
+use relm4::gtk::prelude::GtkWindowExt;
+use relm4::gtk::prelude::WidgetExt; // Behövs för marginaler och layout
 
 
+
+
+// Deklarera den nya filen som en modul
 mod dbusreceiver;
-use dbusreceiver::{main as other_main};
 
+// 1. Appens tillstånd (Görs publika så dbusreceiver kan se dem)
+pub struct App {
+    pub visad_text: String,
+}
 
-// 1. Skapa en struktur för applikationens tillstånd (State)
-struct App;
-
-// 2. Definiera vilka meddelanden (Events) som appen ska kunna ta emot
+// 2. Meddelanden för att uppdatera GUI
 #[derive(Debug)]
-enum AppMsg {}
+pub enum AppMsg {
+    UppdateraText(String),
+}
 
-// 3. Implementera komponenten med Relm4:s Component-trait
-#[relm4::component]
+// 3. Implementera komponenten
+#[relm4::component(pub)] // <-- Skicka in 'pub' som argument här!
 impl SimpleComponent for App {
     type Init = ();
     type Input = AppMsg;
     type Output = ();
 
-    // Skapar starttillståndet för appen
     fn init(
         _init: Self::Init,
         root: Self::Root,
-        _sender: ComponentSender<Self>,
+        sender: ComponentSender<Self>,
     ) -> ComponentParts<Self> {
-        let model = App;
+        let model = App {
+            visad_text: String::from("Väntar på D-Bus meddelande..."),
+        };
 
-        // Bygger upp fönstret via det interna makrot
+        // Klonga sendern och starta D-Bus-funktionen asynkront i bakgrunden
+        let thread_sender = sender.clone();
+        tokio::spawn(async move {
+            dbusreceiver::starta_dbus_lyssnare(thread_sender).await;
+        });
+
         let widgets = view_output!();
-
         ComponentParts { model, widgets }
     }
 
-    // Bestämmer vad som händer när ett meddelande tas emot
-    fn update(&mut self, _msg: Self::Input, _sender: ComponentSender<Self>) {}
+    fn update(&mut self, msg: Self::Input, _sender: ComponentSender<Self>) {
+        match msg {
+            AppMsg::UppdateraText(ny_text) => {
+                self.visad_text = ny_text;
+            }
+        }
+    }
 
-    // GUI-strukturen skrivs med ett deklarativt makro
     view! {
-        // Vi använder 'gtk' som kommer från den importerade preluden ovan
         gtk::Window {
-            set_title: Some("Mitt första Relm4-fönster"),   // Sätter fönstertiteln
-            set_default_size: (800, 600),                   // Bredd och höjd vid start
-            set_resizable: true,                           // Hindrar användaren från att ändra storlek
-            //set_maximized: true,                          // Startar fönstret i helskärm
-            //set_decorations: false,                       // Tar bort systemramen/kryssknappen (borderless)
-            set_opacity: 0.9,                               // Gör fönstret en aning transparent
+            set_title: Some("Uppdelad D-Bus i Relm4"),
+            set_default_size: (400, 150),
 
-            // HUVUDBOX (Motsvarar en vertikal StackPanel)
             gtk::Box {
                 set_orientation: gtk::Orientation::Vertical,
-                set_spacing: 12,          // Avstånd mellan elementen (i pixlar)
-                set_margin_all: 15,       // "Padding" runt hela innerinnehållet
+                set_spacing: 10,
+                set_margin_all: 20,
+                set_valign: gtk::Align::Center,
 
-                // 1. En rubrik (Label)
                 gtk::Label {
-                    set_label: "Välkommen till Relm4",
-                    // Vi kan styla texten med inbyggda CSS-klasser i GTK
-                    add_css_class: "title-1",
+                    set_label: "Mottaget via D-Bus:",
+                    add_css_class: "caption",
                 },
 
-                // 2. Ett textinmatningsfält (Motsvarar TextBox)
-                gtk::Entry {
-                    set_placeholder_text: Some("Skriv något här..."),
-                    // Gör så att textfältet suger åt sig allt ledigt vertikalt utrymme
-                    set_vexpand: true,
-                    set_valign: gtk::Align::Center,
-                },
-
-                // 3. RAD MED KNAPPAR (Motsvarar en horisontell StackPanel längst ner)
-                gtk::Box {
-                    set_orientation: gtk::Orientation::Horizontal,
-                    set_spacing: 6,
-                    // Knuffar hela denna box till höger sida
-                    set_halign: gtk::Align::End,
-
-                    gtk::Button {
-                        set_label: "Avbryt",
-                    },
-
-                    gtk::Button {
-                        set_label: "OK",
-                        // Gör knappen blå/accentfärgad (GTK standard-styling)
-                        add_css_class: "suggested-action",
-                    },
+                gtk::Label {
+                    #[watch]
+                    set_label: &model.visad_text,
+                    add_css_class: "title-2",
                 }
             }
-
-
-
-
         }
     }
 }
 
-// 4. Starta applikationen i main-funktionen
 fn main() {
-    let app = RelmApp::new("se.exempel.enkelt_fonster");
-    let _ = dbusreceiver::main();
+    let app = RelmApp::new("se.exempel.dbus_mottagare");
     app.run::<App>(());
 }

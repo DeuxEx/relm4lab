@@ -1,40 +1,44 @@
-#[warn(dead_code)]
-#[warn(unused)]
-#[warn(unused_imports)]
+#![allow(dead_code)]
+#![allow(unused_variables)]
+#![allow(unused_imports)]
 
 
+use relm4::ComponentSender;
 use zbus::{interface, connection};
-use std::error::Error;
+use crate::{App, AppMsg};
 
-// 1. Define the structure that will hold your application state
-pub struct DataReceiver;
+pub struct DbusReceiver {
+    gui_sender: ComponentSender<App>,
+}
 
-// 2. Export this structure as a D-Bus Interface
-#[interface(name = "com.example.DataReceiver")]
-impl DataReceiver {
-    // This is the API method App B will call
-    async fn send_packet(&self, text: String) -> zbus::fdo::Result<()> {
-        println!("Received text packet via D-Bus: {}", text);
-        Ok(())
+#[interface(name = "se.exempel.GuiInterface")]
+impl DbusReceiver {
+    async fn skicka_text(&self, text: String) {
+        let _ = self.gui_sender.input(AppMsg::UppdateraText(text));
     }
 }
 
-#[tokio::main]
-pub async fn main() -> Result<(), Box<dyn Error>> {
-    let receiver = DataReceiver;
+pub async fn starta_dbus_lyssnare(sender: ComponentSender<App>) {
+    let receiver = DbusReceiver { gui_sender: sender };
 
-    // 3. Connect to the user's Session Bus and claim a unique name
-    let _conn = connection::Builder::session()?
-        .name("com.example.AppA")? // This replaces the IP address/Port
-        .serve_at("/com/example/AppA", receiver)? // The object path
-        .build()
-        .await?;
+    // Vi sparar anslutningen i en variabel 'conn'
+    //let conn = connection::Builder::system() // <--- Ändrat från .session() för att klara både vanilj och root, kräver att man skapar en policy
+    let conn = connection::Builder::session() // <--- Ändrat från .system() för att vanilj user ska fungera
+    .unwrap()
+    .name("se.exempel.GuiService").unwrap()
+    .serve_at("/se/exempel/GuiObject", receiver).unwrap()
+    .build()
+    .await;
 
-    println!("D-Bus service 'com.example.AppA' is running...");
-    
-    // Keep the service alive indefinitely
-    loop
-    {
-        tokio::time::sleep(std::time::Duration::from_secs(60)).await;
+    match conn {
+        Ok(_connection) => {
+            println!("🚀 D-Bus-tjänsten startade framgångsrikt som 'se.exempel.GuiService'!");
+
+            // VIKTIGT: Vi flyttar in pending HÄR så att '_connection' inte droppas ur minnet!
+            std::future::pending::<()>().await;
+        }
+        Err(e) => {
+            eprintln!("❌ D-Bus misslyckades att starta: {:?}", e);
+        }
     }
 }
