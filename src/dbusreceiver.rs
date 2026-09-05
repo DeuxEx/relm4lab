@@ -22,7 +22,7 @@ pub async fn starta_dbus_lyssnare(sender: ComponentSender<App>) {
     let receiver = DbusReceiver { gui_sender: sender };
 
     // Vi sparar anslutningen i en variabel 'conn'
-    //let conn = connection::Builder::system() // <--- Ändrat från .session() för att klara både vanilj och root, kräver att man skapar en policy
+    // let conn = connection::Builder::system() // <--- Ändrat från .session() för att klara både vanilj och root, kräver att man skapar en policy
     let conn = connection::Builder::session() // <--- Ändrat från .system() för att vanilj user ska fungera
     .unwrap()
     .name("se.exempel.GuiService").unwrap()

@@ -9,23 +9,23 @@ use relm4::gtk::prelude::*;
 use relm4::gtk::prelude::GtkWindowExt;
 use relm4::gtk::prelude::WidgetExt; // Behövs för marginaler och layout
 
-
-
 mod dbusreceiver;
 
-// 1. Appens tillstånd (Görs publika så dbusreceiver kan se dem)
+
+// Appens tillstånd (Görs publika så dbusreceiver kan se dem)
 pub struct App {
     pub visad_text: String,
 }
 
-// 2. Meddelanden för att uppdatera GUI
+
+// Meddelanden för att uppdatera GUI
 #[derive(Debug)]
 pub enum AppMsg {
     UppdateraText(String),
 }
 
 
-// 3. Implementera komponenten
+// Implementera komponenten
 #[relm4::component(pub)] // <-- Skicka in 'pub' som argument här!
 impl SimpleComponent for App {
     type Init = ();
