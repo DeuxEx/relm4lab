@@ -5,14 +5,12 @@
 
 use relm4::prelude::*;
 use relm4::gtk::prelude::*;
-// LÄGG TILL DESSA TVÅ RADER:
+
 use relm4::gtk::prelude::GtkWindowExt;
 use relm4::gtk::prelude::WidgetExt; // Behövs för marginaler och layout
 
 
 
-
-// Deklarera den nya filen som en modul
 mod dbusreceiver;
 
 // 1. Appens tillstånd (Görs publika så dbusreceiver kan se dem)
@@ -25,6 +23,7 @@ pub struct App {
 pub enum AppMsg {
     UppdateraText(String),
 }
+
 
 // 3. Implementera komponenten
 #[relm4::component(pub)] // <-- Skicka in 'pub' som argument här!
